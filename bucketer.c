@@ -8,8 +8,8 @@ struct CountsByUsage {
 };
 
 struct CountsByUsage countBatteriesByUsage(const int* cycles, int nBatteries) {
-  struct CountsByUsage counts = {2, 3, 1};
- /* int count1=0;
+  
+ int count1=0;
   int count2=0;
   int count3=0;
   for(int i=0;i<nBatteries;i++)
@@ -22,9 +22,7 @@ struct CountsByUsage countBatteriesByUsage(const int* cycles, int nBatteries) {
     count3++;
     
   }
-  counts[0]=count1;
-  counts[1]=count2;
-  counts[2]=count3;*/
+  struct CountsByUsage counts = {count1, count2, count3};
   return counts;
 }
 
